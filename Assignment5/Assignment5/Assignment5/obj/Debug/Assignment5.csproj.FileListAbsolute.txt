@@ -1,0 +1,8 @@
+C:\Assignments\Csharp\Assignment5\Assignment5\Assignment5\bin\Debug\Assignment5.exe.config
+C:\Assignments\Csharp\Assignment5\Assignment5\Assignment5\bin\Debug\Assignment5.exe
+C:\Assignments\Csharp\Assignment5\Assignment5\Assignment5\bin\Debug\Assignment5.pdb
+C:\Assignments\Csharp\Assignment5\Assignment5\Assignment5\obj\Debug\Assignment5.csproj.AssemblyReference.cache
+C:\Assignments\Csharp\Assignment5\Assignment5\Assignment5\obj\Debug\Assignment5.csproj.SuggestedBindingRedirects.cache
+C:\Assignments\Csharp\Assignment5\Assignment5\Assignment5\obj\Debug\Assignment5.csproj.CoreCompileInputs.cache
+C:\Assignments\Csharp\Assignment5\Assignment5\Assignment5\obj\Debug\Assignment5.exe
+C:\Assignments\Csharp\Assignment5\Assignment5\Assignment5\obj\Debug\Assignment5.pdb
