@@ -51,7 +51,7 @@ namespace Assignment5
                 {
                     Console.WriteLine("Enter the WithDrawn Amount : ");
                     float Withdrawn_Amount = Convert.ToSingle(Console.ReadLine());
-                   // Balance = Balance - Withdrawn_Amount;
+                  
 
                     if( Withdrawn_Amount> Balance)
                     {
