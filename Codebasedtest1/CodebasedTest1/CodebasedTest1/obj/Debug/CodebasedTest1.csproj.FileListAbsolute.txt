@@ -1,0 +1,8 @@
+C:\Assignments\Csharp\Codebasedtest1\CodebasedTest1\CodebasedTest1\bin\Debug\CodebasedTest1.exe.config
+C:\Assignments\Csharp\Codebasedtest1\CodebasedTest1\CodebasedTest1\bin\Debug\CodebasedTest1.exe
+C:\Assignments\Csharp\Codebasedtest1\CodebasedTest1\CodebasedTest1\bin\Debug\CodebasedTest1.pdb
+C:\Assignments\Csharp\Codebasedtest1\CodebasedTest1\CodebasedTest1\obj\Debug\CodebasedTest1.csproj.AssemblyReference.cache
+C:\Assignments\Csharp\Codebasedtest1\CodebasedTest1\CodebasedTest1\obj\Debug\CodebasedTest1.csproj.SuggestedBindingRedirects.cache
+C:\Assignments\Csharp\Codebasedtest1\CodebasedTest1\CodebasedTest1\obj\Debug\CodebasedTest1.csproj.CoreCompileInputs.cache
+C:\Assignments\Csharp\Codebasedtest1\CodebasedTest1\CodebasedTest1\obj\Debug\CodebasedTest1.exe
+C:\Assignments\Csharp\Codebasedtest1\CodebasedTest1\CodebasedTest1\obj\Debug\CodebasedTest1.pdb
