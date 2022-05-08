@@ -1,0 +1,8 @@
+C:\Assignments\Csharp\Assignment7\Assignment7\Assignment7\Assignment7\bin\Debug\Assignment7.exe.config
+C:\Assignments\Csharp\Assignment7\Assignment7\Assignment7\Assignment7\bin\Debug\Assignment7.exe
+C:\Assignments\Csharp\Assignment7\Assignment7\Assignment7\Assignment7\bin\Debug\Assignment7.pdb
+C:\Assignments\Csharp\Assignment7\Assignment7\Assignment7\Assignment7\obj\Debug\Assignment7.csproj.AssemblyReference.cache
+C:\Assignments\Csharp\Assignment7\Assignment7\Assignment7\Assignment7\obj\Debug\Assignment7.csproj.SuggestedBindingRedirects.cache
+C:\Assignments\Csharp\Assignment7\Assignment7\Assignment7\Assignment7\obj\Debug\Assignment7.csproj.CoreCompileInputs.cache
+C:\Assignments\Csharp\Assignment7\Assignment7\Assignment7\Assignment7\obj\Debug\Assignment7.exe
+C:\Assignments\Csharp\Assignment7\Assignment7\Assignment7\Assignment7\obj\Debug\Assignment7.pdb
