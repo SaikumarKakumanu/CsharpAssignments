@@ -131,11 +131,14 @@ namespace Assignment7
             Console.WriteLine("total no.of non-associates Employes is : "+empt);
             Console.WriteLine("-----------------------------------------------");
 
-            var empbased = (from e in emp.GetEmployees()
-                            orderby e.City
-                            orderby e.EmpTitle
-                            select e).Count();
-            Console.WriteLine("Total no.of employees based on city and title : "+empbased);
+            var Empbased = from v in emp.GetEmployees()
+                         orderby v.City
+                         orderby v.EmpTitle
+                         select v;
+            foreach(var empb in Empbased)
+            {
+                Console.WriteLine(empb);
+            }
 
             Console.WriteLine("--------------------------------------------------------");
             var empyoungest = (emp.GetEmployees().OrderByDescending(e => e.DOB).Take(1));
