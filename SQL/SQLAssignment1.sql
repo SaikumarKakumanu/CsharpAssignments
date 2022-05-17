@@ -78,6 +78,8 @@ order by ename asc
 select job ,DEPTNO, sum(sal) as "TOTAL SAL"
 from EMP
 group by job,deptno
+  select DEPT.DeptNo,count(*) Deptno,sum(sal) 'Total salary Paid' from DEPT,Emp where Emp.deptno=Dept.Deptno
+ group by DEPT.DeptNo
 
 --11. Find out salary of both MILLER and SMITH.
 select ename,sal
