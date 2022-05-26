@@ -1,0 +1,8 @@
+C:\Assignments\Csharp\MiniProject\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.exe.config
+C:\Assignments\Csharp\MiniProject\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.exe
+C:\Assignments\Csharp\MiniProject\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.pdb
+C:\Assignments\Csharp\MiniProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.AssemblyReference.cache
+C:\Assignments\Csharp\MiniProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.SuggestedBindingRedirects.cache
+C:\Assignments\Csharp\MiniProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.CoreCompileInputs.cache
+C:\Assignments\Csharp\MiniProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe
+C:\Assignments\Csharp\MiniProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.pdb
