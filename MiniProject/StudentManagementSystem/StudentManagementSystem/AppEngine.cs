@@ -20,21 +20,44 @@ namespace StudentManagementSystem
 
         }
 
-        public Student[] listOfStudents()
+        //public Student[] listOfStudents()
+        //{
+        //    Student[] students = new Student[3]
+        //    {
+        //        new Student(1,"saikumar","28/05/2000"),
+        //        new Student(2,"Saikrishna","23/06/1999"),
+        //        new Student(3,"Venkat","25/08/1972")
+        //    };
+
+        //    return students;
+        //}
+
+        public List<Student> listOfStudents()
         {
-            Student[] students = new Student[3]
+            List<Student> students = new List<Student>()
             {
-                new Student(1,"saikumar","28/05/2000"),
-                new Student(2,"Saikrishna","23/06/1999"),
-                new Student(3,"Venkat","25/08/1972")
+               new Student(1,"saikumar","28/05/2000"),
+               new Student(2,"Saikrishna","23/06/1999"),
+               new Student(3,"Venkat","25/08/1972")
             };
 
             return students;
         }
 
-        public Course[] listOfCourses()
+        //public Course[] listOfCourses()
+        //{
+        //    Course[] courses = new Course[3]
+        //   {
+        //        new Course(101,"Java",35,15000.00f),
+        //        new Course(102,"DotNet",60,20000.00f),
+        //        new Course(103,"Python",30,12000.00f)
+        //   };
+        //    return courses;
+        //}
+
+        public List<Course> listOfCourses()
         {
-            Course[] courses = new Course[3]
+            List<Course> courses = new List<Course>()
            {
                 new Course(101,"Java",35,15000.00f),
                 new Course(102,"DotNet",60,20000.00f),
@@ -50,9 +73,21 @@ namespace StudentManagementSystem
             info.display(course);
         }
 
-        public Enroll[] listOfEnrollments()
+        //public Enroll[] listOfEnrollments()
+        //{
+        //    Enroll[] enroll = new Enroll[3]
+        //    {
+
+        //      new Enroll(new Student(1, "saikumar", "28/05/2000"), new Course(101, "Java", 30, 15000.00f), Convert.ToDateTime(DateTime.Now)),
+        //      new Enroll(new Student(2, "saikrishna", "23/06/1999"), new Course(102, "Dotnet", 60, 20000.00f), Convert.ToDateTime(DateTime.Now)),
+        //      new Enroll(new Student(3, "venkat", "25/08/1972"), new Course(103, "Python", 30, 12000.00f), Convert.ToDateTime(DateTime.Now))
+        //    };
+        //    return enroll;
+        //}
+
+        public List<Enroll> listOfEnrollments()
         {
-            Enroll[] enroll = new Enroll[3]
+            List<Enroll> enroll = new List<Enroll>()
             {
 
               new Enroll(new Student(1, "saikumar", "28/05/2000"), new Course(101, "Java", 30, 15000.00f), Convert.ToDateTime(DateTime.Now)),

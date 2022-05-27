@@ -87,15 +87,17 @@ namespace StudentManagementSystem
             //app.Scenerio2();
             //app.Scenerio3();
 
-            Student student1 = new Student(1, "saikumar", "28/05/2000");
+           /* Student student1 = new Student(1, "saikumar", "28/05/2000");
             Student student2 = new Student(2, "Saikrishna", "23/06/1999");
             Student student3 = new Student(3, "Venkat", "25/08/1972");
 
             Course course1 = new Course(101, "Java", 30, 1200.00f);
             Course course2 = new Course(102, "DotNet", 60, 20000.00f);
             Course course3 = new Course(103, "Python", 30, 12000.00f);
-
+           */
             AppEngine engine = new AppEngine();
+            /* Console.WriteLine("Display the details using Arrays : ");
+            Console.WriteLine();
             Console.WriteLine("The register Student Details is :");
             engine.register(student1);
             engine.register(student2);
@@ -137,7 +139,33 @@ namespace StudentManagementSystem
             {
                 Info info = new Info();
                 info.displayEnrolldetails(e);
+            } */
+
+
+            Console.WriteLine("Display the details using collections : ");
+            Console.WriteLine();
+            foreach(Student studentslist in engine.listOfStudents())
+            {
+                Console.WriteLine(studentslist.Id+" "+studentslist.Name+" "+studentslist.DOB);
             }
+            Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------------------");
+            foreach (Course courselist in engine.listOfCourses())
+            {
+                Console.WriteLine(courselist.Id + " " + courselist.Name + " " + courselist.duration+" "+courselist.fees);
+            }
+            Console.WriteLine();
+            Console.WriteLine("---------------------------------------------------------------------");
+            var lists = from li in engine.listOfEnrollments()
+                        select li;
+            foreach (var s in lists)
+            {
+                Console.WriteLine(s._student.Id + " " + s._student.Name + " " + s._student.DOB);
+                Console.WriteLine(s._course.Id + " " + s._course.Name + " " + s._course.duration + " " + s._course.fees);
+                Console.WriteLine(s._dateTime);
+            }
+
+            new UserInterFace().showFirstScreen();
             Console.Read();
         }
     }
