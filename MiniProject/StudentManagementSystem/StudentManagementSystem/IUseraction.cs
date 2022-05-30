@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagementSystem
 {
-    interface Interface
+    interface IUseraction
     {
 		void showFirstScreen();
 		void showStudentScreen();

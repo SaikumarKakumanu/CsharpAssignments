@@ -141,7 +141,7 @@ namespace StudentManagementSystem
                 info.displayEnrolldetails(e);
             } */
 
-
+            /*
             Console.WriteLine("Display the details using collections : ");
             Console.WriteLine();
             foreach(Student studentslist in engine.listOfStudents())
@@ -164,8 +164,9 @@ namespace StudentManagementSystem
                 Console.WriteLine(s._course.Id + " " + s._course.Name + " " + s._course.duration + " " + s._course.fees);
                 Console.WriteLine(s._dateTime);
             }
-
+            */
             new UserInterFace().showFirstScreen();
+            
             Console.Read();
         }
     }

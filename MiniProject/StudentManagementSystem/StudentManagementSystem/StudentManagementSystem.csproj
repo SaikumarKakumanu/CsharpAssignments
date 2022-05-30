@@ -47,7 +47,7 @@
     <Compile Include="AppEngine.cs" />
     <Compile Include="Enroll.cs" />
     <Compile Include="Info.cs" />
-    <Compile Include="Interface.cs" />
+    <Compile Include="IUseraction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserInterFace.cs" />
   </ItemGroup>
