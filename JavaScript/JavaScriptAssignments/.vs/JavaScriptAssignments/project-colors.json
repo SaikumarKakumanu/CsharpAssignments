@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ff9e36c8-0141-40dc-9fb2-eaa813305f13": {
+      "ProjectGuid": "ff9e36c8-0141-40dc-9fb2-eaa813305f13",
+      "DisplayName": "JavaScriptAssignments",
+      "ColorIndex": 0
+    },
+    "a484a3f0-f7bd-451e-aa6c-6733ca6f08eb": {
+      "ProjectGuid": "a484a3f0-f7bd-451e-aa6c-6733ca6f08eb",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
