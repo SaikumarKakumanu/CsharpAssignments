@@ -34,12 +34,12 @@ namespace CodebaseTest3
                 string etype=Console.ReadLine();
                 cmd=new SqlCommand("AddEmployee",con);
                 cmd.CommandType=CommandType.StoredProcedure;
-                cmd = new SqlCommand("execute AddEmployee @ename,@esal,@etype");
+                cmd = new SqlCommand("execute AddEmployee @ename,@esal,@etype",con);
                 cmd.Parameters.Add(new SqlParameter("@ename", ename));
                 cmd.Parameters.Add(new SqlParameter("@esal", esal));
                 cmd.Parameters.Add(new SqlParameter("@etype", etype));
                
-                cmd.Connection=con;
+                
                 int res = cmd.ExecuteNonQuery();
                 if (res > 0)
                 {
