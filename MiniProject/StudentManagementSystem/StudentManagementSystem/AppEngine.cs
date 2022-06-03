@@ -167,14 +167,14 @@ namespace StudentManagementSystem
         {
             try
             {
+                con = getConnection();
                 Console.WriteLine("Enter the Student id :");
                 int id = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter the Student Name :");
                 string name = Console.ReadLine();
                 Console.WriteLine("Enter the Student DOB :");
                 string dob = Console.ReadLine();
-                con = getConnection();
-                cmd = new SqlCommand("update Students set SName=@sname,DOB=@dob where StudentId=@stdId");
+                cmd = new SqlCommand("update Students set SName=@sname,DOB=@dob where StudentId=@stdId",con);
                 cmd.Parameters.AddWithValue("@stdId", id);
                 cmd.Parameters.AddWithValue("@sname", name);
                 cmd.Parameters.AddWithValue("@dob",dob);
@@ -276,7 +276,7 @@ namespace StudentManagementSystem
                 con=getConnection();
                 Console.WriteLine("Enter The Course Id ");
                 int id = Convert.ToInt32(Console.ReadLine());
-                cmd = new SqlCommand("select * from Courses where CId=@Cid");
+                cmd = new SqlCommand("select * from Courses where CId=@Cid",con);
                 cmd.Parameters.AddWithValue("@cid",id);
                 dr=cmd.ExecuteReader();
                 while (dr.Read())
@@ -298,14 +298,14 @@ namespace StudentManagementSystem
         {
             try
             {
+                con = getConnection();
                 Console.WriteLine("Enter the Course id :");
                 int id = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter the Course Duration :");
                 int duration = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter the Course Fees :");
                 float fee = Convert.ToSingle(Console.ReadLine());
-                con = getConnection();
-                cmd = new SqlCommand("update Courses set Cduration=@cd,Cfees=@fees where CId=@cid");
+                cmd = new SqlCommand("update Courses set Cduration=@cd,Cfees=@fees where CId=@cid",con);
                 cmd.Parameters.AddWithValue("@cid", id);
                 cmd.Parameters.AddWithValue("@Cd", duration);
                 cmd.Parameters.AddWithValue("@fees", fee);
@@ -392,7 +392,7 @@ namespace StudentManagementSystem
             }
         }
 
-        public void EnrollDetailslists()
+        public void EnrollStudent()
         {
             try
             {
@@ -401,10 +401,13 @@ namespace StudentManagementSystem
                 int sid = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter the Course id :");
                 int cid = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter You paid Amount");
+                float pfees = Convert.ToSingle(Console.ReadLine());
                 DateTime Enrolldate = DateTime.UtcNow;
-                cmd = new SqlCommand("insert into EnrollDetails values(@Cid,@StuId,@EnrollDate)",con);
+                cmd = new SqlCommand("insert into EnrollDetails values(@Cid,@StuId,@Paidfees,@EnrollDate)",con);
                 cmd.Parameters.AddWithValue("@Cid", cid);
                 cmd.Parameters.AddWithValue("@StuId", sid);
+                cmd.Parameters.AddWithValue("@Paidfees",pfees);
                 cmd.Parameters.AddWithValue("@EnrollDate",Enrolldate);
                 int res = cmd.ExecuteNonQuery();
                 if (res > 0)
@@ -423,6 +426,47 @@ namespace StudentManagementSystem
             finally
             {
                 con.Close();
+            }
+        }
+        public void EnrollLists()
+        {
+            try
+            {
+                con= getConnection();
+                cmd = new SqlCommand("select * from EnrollDetails", con);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Console.WriteLine("Course Id : "+dr[0] + " Student Id : " + dr[1] + "  Paid Fees : " + dr[2] + " Enroll Date : " + dr[3]);
+                }
+            }
+            catch(SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        public void DeleteParticularEnroll()
+        {
+            try
+            {
+                con= getConnection();
+                Console.WriteLine("Enter Student Id ");
+                int stdid = Convert.ToInt32(Console.ReadLine());
+                cmd = new SqlCommand("delete EnrollDetails where StudId=@stdid", con);
+                cmd.Parameters.AddWithValue("@stdid",stdid);
+                int res = cmd.ExecuteNonQuery();
+                if(res > 0)
+                {
+                    Console.WriteLine("Row Delete Successfully");
+                }
+                else
+                {
+                    Console.WriteLine("Row Not Delete");
+                }
+            }
+            catch(SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
             }
         }
     }

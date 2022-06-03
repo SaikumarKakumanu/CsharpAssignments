@@ -15,8 +15,6 @@ namespace StudentManagementSystem
 		{
 			do
 			{
-
-
 				Console.WriteLine("Welcome to SMS(Student Mgmt. System) v1.0");
 				Console.WriteLine("Tell us who you are : \n1. Student\n2. Admin");
 				Console.WriteLine("Enter your choice ( 1 or 2 ) : ");
@@ -44,28 +42,24 @@ namespace StudentManagementSystem
         {
             do
             {
-                Console.WriteLine("Select: \n1.Check your Details(Existing User)\n2.Registration(New User)\n3.Search Available Courses\n4.Enroll to Course in List");
+                Console.WriteLine("Select: \n1. Student Registration \n2.Available Courses \n3.Enroll to Course in List");
                 int op = Convert.ToInt32(Console.ReadLine());
                 switch (op)
                 {
-                    case 1:
-                        // Checks  Particular student details
-                        engine.ParticularStudent();
-                        Console.WriteLine("Action Completed you may Exit....!");
-                        break;
-                    case 2://New registration
+                   
+                    case 1://New registration
                         this.showStudentRegistrationScreen();
                         Console.WriteLine("Action Completed you may Exit....!");
                         break;
-                    case 3:
+                    case 2:
                         //Showcase all available courses
                         Console.WriteLine("--------------------List of Courses------------------------");
                         engine.AllCoursesLists();
                         Console.WriteLine("Action Completed you may Exit....!");
                         break;
-                    case 4:
+                    case 3:
                         //Student enrolling to particular course
-                        engine.EnrollDetailslists();
+                        engine.EnrollStudent();
                         Console.WriteLine("You have successfully enrolled you may Exit the Screen now");
                         break;
                     default:
@@ -80,7 +74,7 @@ namespace StudentManagementSystem
         {
             do
             {
-                Console.WriteLine("Select: \n1.Introduce New Course\n2.Courses Available\n3.Update Course Details\n4.Retrieve Particular Course in List\n5.Deleting Existing Student\n6.Delete Course\n7.Update Student Details\n8.All Registered Students");
+                Console.WriteLine("Select: \n1.Introduce New Course\n2.Courses Available\n3.Update Course Details\n4.Select Particular Course \n5.Deleting Existing Student\n6.Delete Course \n7.Update Student Details \n8.All Registered Students \n9.All Enroll Lists \n10.Check Particular Student \n11.Delete Particular Enroller");
                 int op = Convert.ToInt32(Console.ReadLine());
                 switch (op)
                 {
@@ -123,6 +117,20 @@ namespace StudentManagementSystem
                     case 8:
                         //Gives ALL Students Details
                         showAllStudentsScreen();
+                        break;
+                    case 9:
+                        Console.WriteLine("All Enrolls Lists..............");
+                        engine.EnrollLists();
+                        Console.WriteLine("Action Completed you may Exit....!");
+                        break;
+                    case 10:
+                        // Checks  Particular student details
+                        engine.ParticularStudent();
+                        Console.WriteLine("Action Completed you may Exit....!");
+                        break;
+                    case 11:
+                        engine.DeleteParticularEnroll();
+                        Console.WriteLine("Action Completed you may Exit....!");
                         break;
 
                     default:
