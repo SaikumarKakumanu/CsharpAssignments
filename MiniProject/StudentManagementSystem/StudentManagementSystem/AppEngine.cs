@@ -444,6 +444,10 @@ namespace StudentManagementSystem
             {
                 Console.WriteLine(ex.Message);
             }
+            finally
+            {
+                con.Close();
+            }
         }
         public void DeleteParticularEnroll()
         {
@@ -467,6 +471,10 @@ namespace StudentManagementSystem
             catch(SqlException ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                con.Close();
             }
         }
         public void UpdateEnroller()
@@ -498,6 +506,10 @@ namespace StudentManagementSystem
             catch (SqlException ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                con.Close();
             }
         }
     }
