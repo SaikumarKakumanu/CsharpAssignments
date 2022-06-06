@@ -74,7 +74,7 @@ namespace StudentManagementSystem
         {
             do
             {
-                Console.WriteLine("Select: \n1.Introduce New Course\n2.Courses Available\n3.Update Course Details\n4.Select Particular Course \n5.Deleting Existing Student\n6.Delete Course \n7.Update Student Details \n8.All Registered Students \n9.All Enroll Lists \n10.Check Particular Student \n11.Delete Particular Enroller");
+                Console.WriteLine("Select: \n1.Introduce New Course\n2.Courses Available\n3.Update Course Details\n4.Select Particular Course \n5.Deleting Existing Student\n6.Delete Course \n7.Update Student Details \n8.All Registered Students \n9.All Enroll Lists \n10.Check Particular Student \n11.Delete Particular Enroller \n12.Update EnrollDetails");
                 int op = Convert.ToInt32(Console.ReadLine());
                 switch (op)
                 {
@@ -130,6 +130,10 @@ namespace StudentManagementSystem
                         break;
                     case 11:
                         engine.DeleteParticularEnroll();
+                        Console.WriteLine("Action Completed you may Exit....!");
+                        break;
+                    case 12:
+                        engine.UpdateEnroller();
                         Console.WriteLine("Action Completed you may Exit....!");
                         break;
 

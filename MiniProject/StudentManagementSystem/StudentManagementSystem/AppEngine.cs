@@ -469,5 +469,36 @@ namespace StudentManagementSystem
                 Console.WriteLine(ex.Message);
             }
         }
+        public void UpdateEnroller()
+        {
+            try
+            {
+                con = getConnection();
+                Console.WriteLine("Enter Student Id ");
+                int stdid = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter Course Id ");
+                int cid = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter paid fee ");
+                float pfee = Convert.ToSingle(Console.ReadLine());
+                cmd = new SqlCommand("update EnrollDetails set Cid=@cid, Paidfees=@pfee where StudId=@stdid", con);
+                cmd.Parameters.AddWithValue("@stdid", stdid);
+                cmd.Parameters.AddWithValue("@cid", cid);
+                cmd.Parameters.AddWithValue("@pfee", pfee);
+               
+                int res = cmd.ExecuteNonQuery();
+                if (res > 0)
+                {
+                    Console.WriteLine("Row Update Successfully");
+                }
+                else
+                {
+                    Console.WriteLine("Row Not Update");
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }
