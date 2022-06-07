@@ -403,7 +403,7 @@ namespace StudentManagementSystem
                 int cid = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter You paid Amount");
                 float pfees = Convert.ToSingle(Console.ReadLine());
-                DateTime Enrolldate = DateTime.UtcNow;
+                DateTime Enrolldate = DateTime.Now;
                 cmd = new SqlCommand("insert into EnrollDetails values(@Cid,@StuId,@Paidfees,@EnrollDate)",con);
                 cmd.Parameters.AddWithValue("@Cid", cid);
                 cmd.Parameters.AddWithValue("@StuId", sid);
