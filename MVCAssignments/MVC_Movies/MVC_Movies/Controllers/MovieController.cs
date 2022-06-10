@@ -16,6 +16,7 @@ namespace MVC_Movies.Controllers
             return View(mc.Movies.ToList());
         }
 
+
         //Adding Data into MoviesDB
         [HttpGet]
         public ActionResult Create()
