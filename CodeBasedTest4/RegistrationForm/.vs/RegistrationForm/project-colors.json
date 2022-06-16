@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "08732f54-12ef-42d2-9b06-af26b5af6bd2": {
+      "ProjectGuid": "08732f54-12ef-42d2-9b06-af26b5af6bd2",
+      "DisplayName": "RegistrationForm",
+      "ColorIndex": 0
+    },
+    "9362a3e5-037d-43b9-9321-e695f3ccd22c": {
+      "ProjectGuid": "9362a3e5-037d-43b9-9321-e695f3ccd22c",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
