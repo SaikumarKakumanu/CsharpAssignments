@@ -17,8 +17,9 @@ namespace Assignment3
 
             // car program
 
-            Car car = new Car(9999, "BMW", "SUV");
+            Car car = new Car(9999, "BMW", "SUV",1000000);
             car.displaycardetails();
+            Console.WriteLine(car._carcost);
             Car car2 = new Car(500000);
 
             // Loan amount calculator

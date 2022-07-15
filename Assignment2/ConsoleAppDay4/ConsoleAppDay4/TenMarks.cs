@@ -39,7 +39,7 @@ namespace ConsoleAppDay4
             {
                 for(int j = i+1; j < n;j++)
                 {
-                    if (arr[i] > arr[j])
+                    if (arr[i] < arr[j])
                     {
                         temp=arr[i];
                         arr[i]=arr[j];
@@ -47,7 +47,7 @@ namespace ConsoleAppDay4
                     }
                 }
             }
-            Console.WriteLine("array values assending order");
+            Console.WriteLine("array values descending order");
             for(int i=0; i < n; i++)
             {
                 Console.WriteLine(arr[i]);

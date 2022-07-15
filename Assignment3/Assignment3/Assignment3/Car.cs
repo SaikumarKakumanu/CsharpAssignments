@@ -11,16 +11,21 @@ namespace Assignment3
         int carno;
         string carName;
         string carType;
-        readonly double carcost=1000000;
+        double carcost;
 
-        public Car(int carno, string carName, string carType)
+        public Car(int carno, string carName, string carType,double carcost)
         {
             this.carno = carno;
             this.carName = carName;
             this.carType = carType;
-            //this.carcost = carcost;
+            this.carcost = carcost;
 
             Console.WriteLine($" carno is : {carno}, car namee is {carName}, car Type is {carType}, car cost is {carcost}");
+        }
+
+        public double _carcost
+        {
+            get { return carcost; }
         }
 
         public Car(double cost)

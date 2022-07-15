@@ -30,7 +30,7 @@ namespace ConsoleAppDay4
             Console.WriteLine("Minimum nuber in array is " + array.Min());
 
             //Ten Marks referance
-           TenMarks te = new TenMarks();
+            TenMarks te = new TenMarks();
             te.tenmarks();
 
             // String Class
